@@ -297,26 +297,26 @@ struct __nvoc_inner_struc_KernelBus_5__ {
 
 struct __nvoc_inner_struc_KernelBus_6__ {
     NvBool bNvlinkPeerIdsReserved;
-    NvU32 busNvlinkPeerNumberMask[32];
-    NvU32 busNvlinkMappingRefcountPerGpu[32];
+    NvU32 busNvlinkPeerNumberMask[NV_MAX_DEVICES];
+    NvU32 busNvlinkMappingRefcountPerGpu[NV_MAX_DEVICES];
     NvU32 busNvlinkMappingRefcountPerPeerId[8];
     NvU32 busNvlinkMappingRefcountPerPeerIdSpa[8];
     NvBool bEgmPeer[8];
 };
 
 struct __nvoc_inner_struc_KernelBus_7__ {
-    NvU32 peerNumberMask[32];
+    NvU32 peerNumberMask[NV_MAX_DEVICES];
     KBUS_PCIE_PEER busPeer[8];
     NvU64 writeMailboxBar1Addr;
     NvU64 writeMailboxTotalSize;
 };
 
 struct __nvoc_inner_struc_KernelBus_8__ {
-    NvU32 busBar1PeerRefcount[32];
+    NvU32 busBar1PeerRefcount[NV_MAX_DEVICES];
 };
 
 struct __nvoc_inner_struc_KernelBus_9__ {
-    NvU32 busC2CPeerNumberMask[32];
+    NvU32 busC2CPeerNumberMask[NV_MAX_DEVICES];
     NvU32 busC2CMappingRefcountPerPeerId[8];
 };
 
