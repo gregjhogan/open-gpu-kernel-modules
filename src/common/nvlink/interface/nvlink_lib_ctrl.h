@@ -57,9 +57,9 @@
 
 /*
  * Total number of nvlink devices supported. Derived based on current supported
- * limits. OBJ_MAX_GPUS = 32 and NVSWITCH_DEVICE_INSTANCE_MAX = 64
+ * limits. OBJ_MAX_GPUS = 64 and NVSWITCH_DEVICE_INSTANCE_MAX = 64
  */
-#define NVLINK_DEVICE_INSTANCE_MAX 96
+#define NVLINK_DEVICE_INSTANCE_MAX 128
 
 /*
  * Total number of nvlink endpoints core library can have

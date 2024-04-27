@@ -34,7 +34,7 @@
 /*
  * This is the maximum number of GPUs supported in a single system.
  */
-#define NV_MAX_DEVICES          32
+#define NV_MAX_DEVICES          64
 
 /*
  * This is the maximum number of subdevices within a single device.

@@ -85,7 +85,7 @@ typedef struct
     void *pData;
 } NvlogFlushCb;
 
-#define NVLOG_MAX_FLUSH_CBS 32
+#define NVLOG_MAX_FLUSH_CBS 64
 
 // At least one callback for each OBJGPU's KernelGsp
 ct_assert(NVLOG_MAX_FLUSH_CBS >= NV_MAX_DEVICES);
