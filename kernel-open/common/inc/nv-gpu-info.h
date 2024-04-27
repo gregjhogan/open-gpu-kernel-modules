@@ -39,6 +39,6 @@ typedef struct {
     void *os_device_ptr;
 } nv_gpu_info_t;
 
-#define NV_MAX_GPUS 32
+#define NV_MAX_GPUS 64
 
 #endif /* _NV_GPU_INFO_H_ */
