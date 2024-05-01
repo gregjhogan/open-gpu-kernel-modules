@@ -331,7 +331,7 @@ gpumgrAllocGpuInstance(NvU32 *pGpuInstance)
     OBJGPUMGR *pGpuMgr = SYS_GET_GPUMGR(pSys);
 
     NvU32 i;
-    NvU64 availableIDs = ((1ULL << NV_MAX_DEVICES) - 1);
+    NvU64 availableIDs = NV_MAX_DEVICES == 64 ? ~0ULL : ((1ULL << NV_MAX_DEVICES) - 1);
 
     if (pGpuMgr->numGpuHandles == 0)
     {
